@@ -36,8 +36,8 @@ var tests = [
   },
   {
     should: 'localise custom media',
-    input: '@custom-media --small (max-width: 30rem)',
-    expected: '@custom-media local(--small) (max-width: 30rem)'
+    input: '@custom-media --small (max-width: 30rem);',
+    expected: '@custom-media local(--small) (max-width: 30rem);'
   },
   {
     should: 'allow narrow global selectors',
