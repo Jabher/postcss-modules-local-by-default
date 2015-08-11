@@ -228,8 +228,6 @@ module.exports = postcss.plugin('postcss-modules-local-by-default', function (op
         } else if(!globalMode) {
           atrule.params = ":local(" + atrule.params + ")";
         }
-      } else if (atrule.name === 'custom-media') {
-        atrule.params = atrule.params.replace(/^(\S+)/, 'local($1)');
       }
     });
     css.eachRule(function(rule) {

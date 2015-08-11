@@ -35,9 +35,9 @@ var tests = [
     expected: '@media only screen { :local(.foo) {} }'
   },
   {
-    should: 'localise custom media',
+    should: 'pass through custom media',
     input: '@custom-media --small (max-width: 30rem);',
-    expected: '@custom-media local(--small) (max-width: 30rem);'
+    expected: '@custom-media --small (max-width: 30rem);'
   },
   {
     should: 'allow narrow global selectors',
